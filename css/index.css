@@ -1,3 +1,450 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+   box-sizing: border-box;
+}
+
+html,
+body,
+li {
+   height: 100%;
+   font-family: "Titillium Web", sans-serif;
+   list-style-type: square;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   font-family: "Bangers", cursive;
+   letter-spacing: 1px;
+   margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*? I left all my old styling in so I could the differences of what it takes. */
+
+/*! container */
+
+.container {
+   margin: 4%;
+   max-width: 100%;
+
+}
+
+/*! start of top-bar styling */
+
+.top-bar {
+   margin-bottom: 20px;
+   width: 100%;
+   border: 1px solid blue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+/*! nav links */
+
+.top-navigation {
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid red;
+   width: 60%;
+   
+   /* padding-right: 12%; */
+}
+
+.top-navigation a {
+   /* display: inline-block; */
+   color: rgb(158, 157, 157);
+   /* margin: 2% 5%; */
+   text-decoration: none;
+   font-size: 11px;
+}
 
 
+/*! start of header styling */
+
+header {
+   margin: 6% 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: auto;
+   /* text-align: center; */
+   /* border: 1px solid red; */
+}
+
+/*! services header */
+
+.services1 {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   /* border: 1px solid red; */
+}
+
+.services1 h1 {
+   font-size: 25px;
+}
+
+.services1 p {
+   line-height: 1.5;
+
+}
+
+.services-header-img {
+   width: 100%;
+   height: 175px;
+   margin-bottom: 20px;
+}
+
+
+header .slogan {
+   margin-left: 100px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   /* position: relative;*/
+   /*top: 50px;*/
+   /*left: 150px;*/
+   /*!*display: inline-block;*!*/
+   font-size: 65px;
+   /* border: 1px solid red;*/
+   text-align: center;
+}
+
+header .slogan div {
+   border: 1px solid black;
+   font-size: 20px;
+   width: 170px;
+   height: 30px;
+    margin-left: auto;
+   margin-right: auto;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+header .slogan div a {
+   text-decoration: none;
+   color: rgb(158, 157, 157);
+}
+
+
+
+ /* start of index description section styling */
+
+.description {
+   display: flex;
+   flex-direction: column;
+   /* display: inline-block; */
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 30px;
+   margin-left: 30px;
+   /* border: 1px solid red; */
+}
+
+.FeaturesAbout {
+   display: flex;
+   justify-content: space-between;
+   /* border: 1px solid red; */
+}
+
+.features {
+   /* display: inline-block; */
+   width: 49%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+   /* border: 1px solid black; */
+}
+
+.about {
+   /* display: inline-block; */
+   width: 49%;
+   margin-top: 3%;
+   margin-bottom: 3%;
+   /* border: 1px solid black; */
+}
+
+.description img {
+   width: 100%;
+}
+
+.ServicesProductVision {
+   display: flex;
+   justify-content: space-between;
+   /* border: 1px solid red; */
+}
+
+.services {
+   /* display: inline-block; */
+   width: 31%;
+   margin: 3% 0%;
+}
+
+.product {
+   /* display: inline-block; */
+   width: 31%;
+   margin: 3% 0%;
+}
+
+.vision {
+   /* display: inline-block; */
+   width: 31%;
+   margin: 3% 0%;
+}
+
+/*! start of services products styling */
+
+.product-description {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.product-services {
+   padding: 15px;
+   border: 1px solid black;
+   background-color: rgb(238, 238, 238);
+   width: 440px;
+   margin: 15px 0px;
+}
+
+.product-services p {
+   margin-bottom: 15px;
+   line-height: 1.5;
+}
+
+.product-description .btn {
+   text-decoration: none;
+   background-color: white;
+   color: black;
+   padding: 5px 38px;
+   font-size: 11px;
+   /* height: 400px; */
+   /* margin-top: 150px; */
+   border-radius: 5px;
+   border: 1px solid black;
+}
+
+/*! start of index contact info styling */
+
+.contact-info {
+   display: flex;
+   flex-direction: column;
+   margin: 10px 30px;
+}
+
+.contact-info address {
+   margin-bottom: 1%;
+}
+
+.contact-info .phone {
+   margin-bottom: 1%;
+}
+
+.contact-info .email {
+   margin-bottom: 1%;
+}
+
+/*! start of services facts section */
+
+.facts {
+   display: flex;
+   margin-top: 20px;
+   margin-bottom: 90px;
+   /* border: 1px solid black; */
+   justify-content: space-between;
+}
+
+.facts img {
+   width: 440px;
+}
+
+.facts div {
+   width: 440px;
+   display: flex;
+   flex-direction: column;
+   /* align-items: space-between; */
+   /* border: 1px solid black; */
+}
+
+.facts p {
+   margin-bottom: 15px;
+   line-height: 1.5;
+
+}
+
+.facts ul {
+   /* height: auto; */
+   display: flex;
+   flex-direction: column;
+   align-content: space-between;
+   margin: 3px 19px;
+   /* border: 1px solid black; */
+}
+
+.facts li {
+   margin: 12px 0px;
+}
+
+/*! start of copyright styling */
+
+.copyright {
+   display: flex;
+   justify-content: center;
+   /* width: 50%; */
+   /* text-align: center; */
+   /* margin-bottom: 40px; */
+   /* margin: 10px auto; */
+   /* border: 2px solid red; */
+}
+
+
+@media (max-width: 800px) {
+   .index-header img:first-child {
+      display: none;
+   }
+}
