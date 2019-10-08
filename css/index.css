@@ -166,7 +166,6 @@ h5 {
 .container {
    margin: 4%;
    max-width: 100%;
-
 }
 
 /*! start of top-bar styling */
@@ -193,7 +192,6 @@ h5 {
    font-size: 11px;
 }
 
-
 /*! start of header styling */
 
 header {
@@ -201,7 +199,6 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-
 }
 
 /*! services header */
@@ -212,7 +209,6 @@ header {
    display: flex;
    flex-direction: column;
    margin-bottom: 20px;
-   /* border: 1px solid red; */
 }
 
 .services1 h1 {
@@ -221,7 +217,6 @@ header {
 
 .services1 p {
    line-height: 1.5;
-
 }
 
 .services-header-img {
@@ -245,7 +240,7 @@ header .slogan div {
    border: 1px solid black;
    font-size: 20px;
    width: 60%;
-    margin-left: auto;
+   margin-left: auto;
    margin-right: auto;
    padding-top: 5px;
    padding-bottom: 5px;
@@ -256,9 +251,7 @@ header .slogan div a {
    color: black;
 }
 
-
-
- /*! index description section styling */
+/*! index description section styling */
 
 .description {
    display: flex;
@@ -268,30 +261,23 @@ header .slogan div a {
    border-bottom: 2px solid black;
    margin-top: 5%;
    margin-bottom: 5%;
-   
-   /* border: 1px solid red; */
 }
 
 .FeaturesAbout {
    display: flex;
    justify-content: space-between;
-   /* border: 1px solid red; */
 }
 
 .features {
-   /* display: inline-block; */
    width: 47%;
    margin-top: 3%;
    margin-bottom: 3%;
-   /* border: 1px solid black; */
 }
 
 .about {
-   /* display: inline-block; */
    width: 47%;
    margin-top: 3%;
    margin-bottom: 3%;
-   /* border: 1px solid black; */
 }
 
 .description img {
@@ -301,23 +287,19 @@ header .slogan div a {
 .ServicesProductVision {
    display: flex;
    justify-content: space-between;
-   /* border: 1px solid red; */
 }
 
 .services {
-   /* display: inline-block; */
    width: 30%;
    margin: 3% 0%;
 }
 
 .product {
-   /* display: inline-block; */
    width: 30%;
    margin: 3% 0%;
 }
 
 .vision {
-   /* display: inline-block; */
    width: 30%;
    margin: 3% 0%;
 }
@@ -349,8 +331,6 @@ header .slogan div a {
    color: black;
    padding: 5px 38px;
    font-size: 11px;
-   /* height: 400px; */
-   /* margin-top: 150px; */
    border-radius: 5px;
    border: 1px solid black;
 }
@@ -381,7 +361,6 @@ header .slogan div a {
    display: flex;
    margin-top: 20px;
    margin-bottom: 90px;
-   /* border: 1px solid black; */
    justify-content: space-between;
 }
 
@@ -393,23 +372,18 @@ header .slogan div a {
    width: 440px;
    display: flex;
    flex-direction: column;
-   /* align-items: space-between; */
-   /* border: 1px solid black; */
 }
 
 .facts p {
    margin-bottom: 15px;
    line-height: 1.5;
-
 }
 
 .facts ul {
-   /* height: auto; */
    display: flex;
    flex-direction: column;
    align-content: space-between;
    margin: 3px 19px;
-   /* border: 1px solid black; */
 }
 
 .facts li {
@@ -424,35 +398,35 @@ header .slogan div a {
 }
 
 @media (max-width: 800px) {
-      .top-bar {
-         flex-direction: column-reverse
-      }
-
-      .top-bar img{
-         margin: 0 0 4% 0;
-      }
-
-      .top-navigation a {
-         font-size: 14px
-      }
-
-      .top-navigation {
-         width:100%;
-      }
-
-      .IndexHeader img{
-         display: none;
-      }
-
-      .IndexHeader {
-         display: flex;
-         justify-content: center
-      }
-
-      .IndexHeader .slogan {
-         margin:0%;
-      }
+   .top-bar {
+      flex-direction: column-reverse;
    }
+
+   .top-bar img {
+      margin: 0 0 4% 0;
+   }
+
+   .top-navigation a {
+      font-size: 14px;
+   }
+
+   .top-navigation {
+      width: 100%;
+   }
+
+   .IndexHeader img {
+      display: none;
+   }
+
+   .IndexHeader {
+      display: flex;
+      justify-content: center;
+   }
+
+   .IndexHeader .slogan {
+      margin: 0%;
+   }
+}
 
 @media (max-width: 500px) {
    .container {
@@ -469,7 +443,7 @@ header .slogan div a {
       margin-top: 2%;
    }
 
-   .top-bar .top-navigation a{
+   .top-bar .top-navigation a {
       width: 100%;
       display: flex;
       justify-content: center;
@@ -483,12 +457,13 @@ header .slogan div a {
    }
 
    .description {
-   flex-direction: column;
-   margin: 0 5%;
-   padding: 5% 0;
+      flex-direction: column;
+      margin: 0 5%;
+      padding: 5% 0;
    }
+   
    .description div {
-      width:100%;
+      width: 100%;
       margin: 5% 0;
    }
 
