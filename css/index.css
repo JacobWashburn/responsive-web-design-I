@@ -185,8 +185,6 @@ h5 {
    display: flex;
    justify-content: space-between;
    width: 60%;
-   
-   /* padding-right: 12%; */
 }
 
 .top-navigation a {
@@ -452,18 +450,20 @@ header .slogan div a {
 @media (max-width: 500px) {
    .top-bar {
       flex-direction: column-reverse;
-      
    }
 
    .top-bar .top-navigation {
-      display: flex;
+      width: 100%;
       flex-direction: column;
-      justify-content: center;
-      border: 1px solid red;
+      border-top: 1px solid grey
    }
 
    .top-bar .top-navigation a{
-      width: 25%;
-      border: 1px solid red;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid gray;
+      margin: 0 auto;
    }
+   
 }
