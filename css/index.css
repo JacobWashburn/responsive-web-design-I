@@ -174,7 +174,6 @@ h5 {
 .top-bar {
    margin-bottom: 20px;
    width: 100%;
-   border: 1px solid blue;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -185,16 +184,13 @@ h5 {
 .top-navigation {
    display: flex;
    justify-content: space-between;
-   border: 1px solid red;
    width: 60%;
    
    /* padding-right: 12%; */
 }
 
 .top-navigation a {
-   /* display: inline-block; */
    color: rgb(158, 157, 157);
-   /* margin: 2% 5%; */
    text-decoration: none;
    font-size: 11px;
 }
@@ -207,9 +203,7 @@ header {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   height: auto;
-   /* text-align: center; */
-   /* border: 1px solid red; */
+
 }
 
 /*! services header */
@@ -238,9 +232,10 @@ header {
    margin-bottom: 20px;
 }
 
+/* ! index header */
 
 header .slogan {
-   margin-left: 100px;
+   margin-left: 10%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -256,8 +251,7 @@ header .slogan {
 header .slogan div {
    border: 1px solid black;
    font-size: 20px;
-   width: 170px;
-   height: 30px;
+   width: 60%;
     margin-left: auto;
    margin-right: auto;
    padding-top: 5px;
@@ -271,18 +265,16 @@ header .slogan div a {
 
 
 
- /* start of index description section styling */
+ /*! index description section styling */
 
 .description {
    display: flex;
-   flex-direction: column;
-   /* display: inline-block; */
+   flex-wrap: wrap;
    border-top: 1px solid black;
    border-bottom: 1px solid black;
-   margin-top: 10px;
-   margin-bottom: 10px;
-   margin-right: 30px;
-   margin-left: 30px;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   
    /* border: 1px solid red; */
 }
 
@@ -336,7 +328,7 @@ header .slogan div a {
    margin: 3% 0%;
 }
 
-/*! start of services products styling */
+/*! services products styling */
 
 .product-description {
    display: flex;
@@ -369,12 +361,12 @@ header .slogan div a {
    border: 1px solid black;
 }
 
-/*! start of index contact info styling */
+/*! index contact info styling */
 
 .contact-info {
    display: flex;
    flex-direction: column;
-   margin: 10px 30px;
+   margin: 8% 3%;
 }
 
 .contact-info address {
@@ -389,7 +381,7 @@ header .slogan div a {
    margin-bottom: 1%;
 }
 
-/*! start of services facts section */
+/*! services facts section */
 
 .facts {
    display: flex;
@@ -430,7 +422,7 @@ header .slogan div a {
    margin: 12px 0px;
 }
 
-/*! start of copyright styling */
+/*! copyright styling */
 
 .copyright {
    display: flex;
@@ -442,9 +434,36 @@ header .slogan div a {
    /* border: 2px solid red; */
 }
 
-
 @media (max-width: 800px) {
-   .index-header img:first-child {
-      display: none;
+      .IndexHeader img{
+         display: none;
+      }
+
+      .IndexHeader {
+         display: flex;
+         justify-content: center
+      }
+
+      .IndexHeader .slogan {
+         margin:0%;
+      }
+   }
+
+@media (max-width: 500px) {
+   .top-bar {
+      flex-direction: column-reverse;
+      
+   }
+
+   .top-bar .top-navigation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid red;
+   }
+
+   .top-bar .top-navigation a{
+      width: 25%;
+      border: 1px solid red;
    }
 }
