@@ -108,7 +108,7 @@ section {
 }
 
 body {
-   line-height: 1;
+   line-height: 1.3;
 }
 
 ol,
@@ -237,12 +237,7 @@ header .slogan {
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* position: relative;*/
-   /*top: 50px;*/
-   /*left: 150px;*/
-   /*!*display: inline-block;*!*/
    font-size: 65px;
-   /* border: 1px solid red;*/
    text-align: center;
 }
 
@@ -258,7 +253,7 @@ header .slogan div {
 
 header .slogan div a {
    text-decoration: none;
-   color: rgb(158, 157, 157);
+   color: black;
 }
 
 
@@ -268,8 +263,8 @@ header .slogan div a {
 .description {
    display: flex;
    flex-wrap: wrap;
-   border-top: 1px solid black;
-   border-bottom: 1px solid black;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
    margin-top: 5%;
    margin-bottom: 5%;
    
@@ -433,6 +428,22 @@ header .slogan div a {
 }
 
 @media (max-width: 800px) {
+      .top-bar {
+         flex-direction: column-reverse
+      }
+
+      .top-bar img{
+         margin: 0 0 4% 0;
+      }
+
+      .top-navigation a {
+         font-size: 14px
+      }
+
+      .top-navigation {
+         width:100%;
+      }
+
       .IndexHeader img{
          display: none;
       }
@@ -448,6 +459,9 @@ header .slogan div a {
    }
 
 @media (max-width: 500px) {
+   .container {
+      margin: 5% 0;
+   }
    .top-bar {
       flex-direction: column-reverse;
    }
@@ -455,7 +469,8 @@ header .slogan div a {
    .top-bar .top-navigation {
       width: 100%;
       flex-direction: column;
-      border-top: 1px solid grey
+      border-top: 1px solid grey;
+      margin-top: 2%;
    }
 
    .top-bar .top-navigation a{
@@ -463,7 +478,29 @@ header .slogan div a {
       display: flex;
       justify-content: center;
       border-bottom: 1px solid gray;
-      margin: 0 auto;
+      font-size: 20px;
+      padding: 3% 0;
    }
-   
+
+   .IndexHeader {
+      margin: 10%;
+   }
+
+   .description {
+   flex-direction: column;
+   margin: 0 5%;
+   padding: 5% 0;
+   }
+   .description div {
+      width:100%;
+      margin: 5% 0;
+   }
+
+   .description img {
+      margin: 5% 0;
+   }
+
+   .contact-info {
+      margin: 10% 5%;
+   }
 }
